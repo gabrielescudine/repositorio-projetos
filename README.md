@@ -3,6 +3,7 @@
 <plugins: - jekyll-remote-theme;>
  <p>Local onde armazeno meus projetos práticos</p>
   <a href="projeto-android/index.html">Projeto 01 - Site Android</a>
+  <a href="projeto-cordel/cordel.html">Projeto 02 - Site Cordel</a>
  <p>Ainda em desenvolvimento..</p>
 
 
