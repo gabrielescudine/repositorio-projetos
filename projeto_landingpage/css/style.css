@@ -9,7 +9,6 @@
 
 html,body{
     height:100%;
-    /* background-color:#212343; */
 }
 
 .clear{
@@ -17,7 +16,7 @@ html,body{
 }
 
 .center{
-    width:1280px;
+    width:100%;
     margin:0 auto;
 }
 
@@ -38,7 +37,7 @@ html,body{
 
 .banner{
     width:100%;
-    min-width: 1280px;
+    padding: 0 2%;
     height:557px;
     background-image: url("../images/header_bg.png");
     background-repeat: no-repeat;
@@ -52,7 +51,7 @@ html,body{
 
 .lista{
     display:inline-block;
-    width:680px;
+    width:670px;
     color:white;
     background-color:#21234377;
     padding:5%;
@@ -150,7 +149,9 @@ main{
 
 /* Início Article */
 
-article{width:100%;}
+article{
+    width:100%;
+}
 
 article h2{
     font-variant: small-caps;
@@ -162,7 +163,9 @@ article h2{
 
 article p{
     margin-top:20px;
-    width:680px;
+    padding:0 5%;
+    width:100%;
+    max-width:1150px;
     display: inline-block;
     text-align: justify;
     color:#5e5e5e;
@@ -181,4 +184,125 @@ article p{
 
 /* Fim Article */
 
+/* Início Aside */
+
+aside{
+    text-align: center;
+    padding: 4% 5%;
+}
+
+aside > h2{
+    padding-bottom: 1%;
+    font-weight:normal;
+    font-variant: small-caps;
+    color:#753799;
+}
+
+.container-single{
+    margin: 3% 0 1% 0;
+    padding: 0 4%;
+    width:33.3%;
+    float:left;
+}
+
+.container-single h2{
+    padding: 3%;
+    font-weight:normal;
+    font-variant: small-caps;
+    color:#753799;
+}
+
+.container-single p{
+    text-align:justify;
+}
+
+/* Fim Aside */
+
 /* Fim Main */
+
+/* Início Footer */
+
+footer{
+    width:100%;
+    border-top: 3px solid #333333;
+    padding: 1% 4% 0.5% 4%;
+}
+
+footer p{
+    text-align:center;
+    font-variant: small-caps;
+    color: #525252;
+    font-size: 1.2em;
+    font-weight:normal;
+}
+
+/* Fim Footer */
+
+/* Início Responsivo */
+
+@media screen and (max-width:1200px){
+
+    .cabecalho{
+        width:100%;
+        height:auto;
+        text-align: center;
+    }
+
+    .banner{
+        width:100%;
+        padding: 0 2%;
+        height:auto;
+    }
+
+    .lista{
+        width:50%;
+        float:left;
+        padding:5%;
+        margin: 5% 0;
+    }
+
+    .form{
+        float:right;
+        top:0;
+        width:50%;
+        max-width:400px;
+        height:100%;
+        padding:1.5%;
+        
+    }
+
+    .seta{
+        top:40px;
+        left:50%;
+
+    }
+
+}
+
+@media screen and (max-width:880px){
+    .lista{           
+        margin-top:2%;
+        float: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    div.form{
+        float: none;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    aside > h2{
+        margin-top:5%;
+    }
+
+    .container-single{    
+    float:none;
+    display: inline-block;
+    width:100%;
+    max-width: 600px;
+    padding: 0 4%;
+    }
+}
