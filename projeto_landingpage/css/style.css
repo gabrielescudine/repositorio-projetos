@@ -305,4 +305,8 @@ footer p{
     max-width: 600px;
     padding: 0 4%;
     }
+
+    div.banner{
+       padding-bottom: 5%; 
+    }
 }
