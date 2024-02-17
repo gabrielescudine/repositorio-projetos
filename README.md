@@ -5,7 +5,8 @@
   <a href="projeto-android/index.html">Projeto 01 - Site Android</a><br>
   <a href="projeto-cordel/cordel.html">Projeto 02 - Site Cordel</a><br>
   <a href="projeto_landingpage/index.html">Projeto 03 - Landing Page</a><br>
-  <a href="projeto-educacao/index.html">Projeto 04 - Site Educação</a>
+  <a href="projeto_starbucks/index.html">Projeto 04 - Página StarBucks</a><br>
+  <a href="projeto-educacao/index.html">Projeto 05 - Site Educação</a>
  <p>Ainda em desenvolvimento..</p>
 
 
