@@ -152,6 +152,7 @@ div.socials{
 /* Começo Responsivo */
 
 @media screen and (max-width:1024px){
+
     div.img-sobre img{
         width: 70%;    
         position:absolute;
@@ -169,6 +170,8 @@ div.socials{
 
 @media screen and (max-width:482px){
 
+    html,body{overflow:visible;}
+
     header.cabecalho{
         background-color:#017142;
     }
@@ -180,12 +183,13 @@ div.socials{
 
     nav.menu{
         width:100%;
+        max-width:100%;
         text-align: center;
     }
 
     nav.menu ul li a{
         color:white;
-        font-weight:600
+        font-weight:600;
     }
 
     section.sobre{
@@ -193,6 +197,7 @@ div.socials{
         text-align: center;
         margin: 25px 0 0 0;
         width:100%;
+        max-width:100%;
     }
 
     section.sobre h1{
@@ -201,6 +206,7 @@ div.socials{
     }
 
     section.sobre p{
+        max-width:100%;
         width:100%;
         text-align: justify;
         padding: 0 2% 5% 2%;
@@ -216,6 +222,7 @@ div.socials{
 
     footer .socials-footer img{
         width:60%;
+        max-width:100%;
     }
 
 
