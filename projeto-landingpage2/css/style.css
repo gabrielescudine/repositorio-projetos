@@ -1,0 +1,225 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+html,body{
+    height:100%;
+}
+
+.center{
+    margin:0 auto;
+    padding: 0 2%;
+    max-width:1280px;
+}
+
+.clear{
+    clear:both;
+}
+
+/* Fim Div's Gerais */
+
+/* Configurações Header */
+
+header{
+    width:100%;
+    /* height:90%; */
+    background-image:url('../img/capa.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 2%;
+}
+
+.logo{
+    float:left;
+    width:50%;
+}
+
+.logo img{
+    width:40%;
+}
+
+.menu-desktop, .menu-mobile{
+    float:right;
+}
+
+.menu-desktop ul li{
+    display: inline-block;
+}
+
+.menu-desktop ul li a{
+    text-decoration: none;
+    color:#fff;
+    font-variant: small-caps;
+    padding: 0 10px 0 20px;
+    font-size: 1.2em;
+}
+
+.menu-desktop ul li a:hover{
+    transition-duration: 0.5s;
+    color:rgb(180, 101, 245);
+}
+
+.menu-mobile{
+    display:none;
+    cursor:pointer;
+    width: 32px;
+    height: 32px;
+    background-image:url('../img/menu.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+}
+
+.menu-mobile ul{
+    list-style-type: none;
+}
+
+.menu-mobile ul li a{
+    text-decoration: none;
+    color:#000;
+    font-variant: small-caps;
+    padding: 0 10px 0 20px;
+    font-size: 1.2em;
+}
+
+div.chamada{
+    margin: 15% auto;
+    max-width: 580px;
+    text-align: left;
+}
+
+.chamada h2{
+    color:white;
+    font-weight: 300;
+    font-size: 2.5em;
+    line-height: 1.5em;
+}
+
+.chamada p{
+    padding: 2% 0;
+    color:white;
+    text-indent: 1em;
+    font-weight: 300;
+}
+
+/*  */
+
+/* Configurações Section-01 */
+
+section.section-01{
+    width:100%;
+    background-color:#472562;
+    height:400px;
+}
+
+.section-text{
+    float:left;
+    width:50%;
+    margin-top:60px;
+}
+
+.section-text h2{
+    color:white;
+    font-weight: 300;
+    font-size: 1.7em;
+
+}
+
+.section-text p{
+    color:white;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin: 20px 0;
+}
+
+.section-text ul{
+    list-style-type: upper-roman;
+    list-style-position: inside;
+}
+
+.section-text ul li{
+    color:white;
+    font-weight: 300;
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+input[type=submit]{
+    color:white;
+    background-color:#FF703D;
+    width:165px;
+    height: 44px;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius:30px;
+    border:0;
+    cursor: pointer;
+}
+
+.img-device{
+    float:left;
+    width:50%;
+    height:430px;
+    position:relative;
+    top:-30px;
+    background-image:url('../img/device.png');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+/*  */
+
+/* Configurações Responsivo */
+
+@media screen and (max-width:768px){
+    
+    /* header{
+        height:auto;
+    } */
+
+    .menu-desktop{
+        display:none;
+    }
+
+    .menu-mobile{
+        display:block;
+    }
+
+    .menu-mobile ul{
+        display:none;
+    }
+
+    .logo img{
+        width:60%;
+    }
+
+    div.chamada{
+        /* margin: 30% auto 0 auto; */
+        text-align: center;
+    }
+
+    section.section-01{
+        width:100%;
+        height:auto;
+        text-align: center;
+        padding: 60px 0;
+    }
+    
+    .section-text{
+        float:none;
+        width:100%;
+        margin-top: 0;
+    }
+
+    .img-device{
+        display:none;
+        float:none;
+    }
+
+}
+
+/*  */
