@@ -7,7 +7,8 @@
   <a href="projeto-landingpage/index.html">Projeto 03 - Landing Page</a><br>
   <a href="projeto-starbucks/index.html">Projeto 04 - Página StarBucks(landing page)</a><br>
   <a href="projeto-construcao/index.html">Projeto 05 - Página Construção(landing page)</a><br>
-  <a href="projeto-educacao/index.html">Projeto 06 - Site Educação</a>
+  <a href="projeto-landingpage2/index.html">Projeto 06 - Página Landing 2</a><br>
+  <a href="projeto-educacao/index.html">Projeto 07 - Site Educação</a>
  <p>Ainda em desenvolvimento..</p>
 
 
