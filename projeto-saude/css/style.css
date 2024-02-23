@@ -1,0 +1,51 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+html,body{
+    height:100%;
+}
+.center{
+    max-width:1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+.clear{
+    clear:both;
+}
+
+/* Configurações Header */
+
+header{
+    padding: 2% 0;
+}
+
+.logo{
+    float:left;
+}
+
+.menu-desktop{
+    float:right;
+}
+
+.menu-desktop ul li{
+    display:inline-block;
+    list-style-type: none;
+}
+
+.menu-desktop ul li a{
+    text-decoration: none;
+    color: #888888;
+    font-variant: small-caps;
+    font-size: 1.2em;
+    padding: 0 10px;
+}
+
+.menu-mobile{
+    display:none;
+}
+
+/*  */
