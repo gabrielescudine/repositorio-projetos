@@ -275,6 +275,12 @@ section.depoimentos h2{
     padding-bottom: 3%;
 }
 
+.depoimentos img{
+    width: 30px;
+    height: 30px;
+    border-radius:50%;
+}
+
 .depoimentos p{
     position:relative;
     top:10px;
@@ -285,7 +291,7 @@ section.depoimentos h2{
 }
 /*  */
 
-/* Configurações Socials 1 */
+/* Configurações Socials */
 
 section.socials{
     background-color:#98a5ae;
