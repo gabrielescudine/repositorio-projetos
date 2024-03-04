@@ -255,11 +255,182 @@ section.tratamentos .center > h2{
 
 /* Configurações Depoimentos */
 
+section.depoimentos .center{
+    padding: 3% 2%;
+    text-align: center;
+}
 
+section.depoimentos h2{
+    color:#698293;
+    font-weight: 600;
+    font-size: 2em;
+    font-variant: small-caps;
+    padding-bottom: 3%;
+}
+
+.depoimentos blockquote{
+    display: inline-block;
+    color:#8d8d8d;
+    max-width: 600px;
+    padding-bottom: 3%;
+}
+
+.depoimentos p{
+    position:relative;
+    top:10px;
+    vertical-align: top;
+    display:inline-block;
+    color: #8d8d8d;
+    font-size: 0.8em;
+}
+/*  */
+
+/* Configurações Socials 1 */
+
+section.socials{
+    background-color:#98a5ae;
+    text-align: center;
+    color:#fff;
+    padding: 3%;
+}
+
+.socials p{
+    margin:10px 0;
+}
+
+#social-facebook{
+    background-color: #576975;
+}
+
+/*  */
+
+/* Configurações Mosaico */
+
+section.mosaico-socials{
+    width:100%;
+    float:left;
+}
+
+.mosaico-single-social{
+    float:left;
+    width:calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color:#ccc;
+    border:5px solid #fff;
+}
+
+/*  */
+
+/* Configurações Formulário */
+
+section.formulario{
+    text-align: center;
+    padding: 3% 2%;
+}
+
+section.formulario h2{
+    color:#698293;
+    font-weight: 600;
+    font-size: 2em;
+    font-variant: small-caps;
+    padding: 2%;
+}
+
+section form{
+    width:100%;
+    max-width:500px;
+    margin: 30px auto;
+}
+
+section form p{
+    text-align: left;
+    color:#929292;
+    padding: 5px;
+}
+
+.form-wrapper{
+    float:left;
+    padding: 0 10px;
+    margin-top:10px;
+}
+
+.w-100{
+    width:100%;
+}
+
+.w-50{
+    width:50%;
+}
+
+input[type=text], input[type=email]{
+    outline:0;
+    width:100%;
+    height:35px;
+    line-height: 35px;
+    padding-left:6px;
+    border:1px solid #ccc;
+}
+
+textarea{
+    outline: 0;
+    border:1px solid #ccc;
+    width:100%;
+    height:120px;
+    padding:5px;
+    resize: none;
+}
+
+input[type=submit]{
+    display: inline-block;
+    width:120px;
+    height:35px;
+    margin-top: 10px;
+    color:white;
+    border:0;
+    background-color:#688293;
+    font-size:1.2em;
+}
+
+/*  */
+
+/* Configurações Footer */
+
+footer.rodape{
+    background-color:#688293;
+    padding:40px 2%;
+}
+
+.footer-block{
+    float:left;
+    width:33.3%;
+    color:white;
+}
+
+.footer-block h2{
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.footer-block p{
+    margin:10px 0;
+    font-weight: 300;
+    font-size: 0.9em;
+}
 
 /*  */
 
 /* Configurações Responsivo */
+
+@media screen and (max-width:1024px){
+    .mosaico-single-social{
+        width:calc(100% / 6);
+        padding-top: calc(100% / 6);
+    }
+
+    .mosaico-single-social:nth-of-type(3n){
+        display:none;
+    }
+}
 
 @media screen and (max-width: 780px){
 
@@ -321,6 +492,32 @@ section.tratamentos .center > h2{
         padding-top: calc(65% * 0.6);
         position:relative;
         border:2px solid white;
+    }
+
+    .mosaico-single-social{
+        width:calc(100% / 3);
+        padding-top: calc(100% / 3);
+    }
+
+    .mosaico-single-social:nth-of-type(2n){
+        display:none;
+    }
+}
+
+@media screen and (max-width: 568px){
+    
+    .form-wrapper{
+        float:none;
+    }
+
+    .w-50{
+        width:100%;
+    }
+
+    .footer-block{
+        float:none;
+        width:100%;
+        text-align: center;
     }
 }
 
