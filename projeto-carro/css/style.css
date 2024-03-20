@@ -154,7 +154,7 @@ section.banner{
     background-color:#000;
 }
 
-.veiculos-destaque .titulo-destaque > h2{
+.titulo-destaque h2{
     position:relative;
     padding: 0 20px;
     top:-20px;
@@ -385,6 +385,255 @@ footer.rodape{
 
 /*  */
 
+/* PÁGINA DE VENDAS */
+
+/* SECTION VENDA VEÍCULO */
+
+.vendas-veiculo{
+    padding: 70px 0;
+}
+
+.sidebar{
+    margin-top: 30px;
+    float:left;
+    width:30%;
+}
+
+.search-by-price{
+    width:90%;
+}
+
+.search-by-price h2{
+    font-size:22px;
+    font-variant: small-caps;
+}
+
+.bar-price{
+    position:relative;
+    width:100%;
+    height:20px;
+    margin-top: 8px;
+    border-radius:20px;
+    border:1px solid #ccc;
+}
+
+.bar-price-fill{
+    position:absolute;
+    width:30%;
+    height:20px;
+    top:0;
+    left:0;
+    background-image:linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    border-radius:20px;
+}
+
+.bar-price-button{
+    position:absolute;
+    top:-3px;
+    left:calc(30% - 13px);
+    width:26px;
+    height:26px;
+    border-radius:8px;
+    border:1px solid #777;
+    background-image:linear-gradient(to bottom,rgb(255,255,255),rgb(180,180,180));
+    cursor:pointer;  
+}
+
+.value-search p{
+    margin-top: 5px;
+    font-size:13px;
+    font-weight: bold;
+}
+
+.value-search p:nth-of-type(1){
+    float:left;
+}
+
+.value-search p:nth-of-type(2){
+    float:right;
+}
+
+.search-by-year{
+    margin-top: 40px;
+}
+
+.search-by-year h2{
+    font-size:22px;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+.form-check-wrapper input[type=checkbox]{
+    display:none;
+}
+
+.form-check-wrapper label{
+    display:inline-block;
+    margin:5px 0;
+    width: 20px;
+    height:20px;
+    border:1px solid rgb(190,190,190);
+    cursor:pointer;
+    border-radius:3px;
+    vertical-align: middle;
+    position:relative;
+}
+
+.form-check-wrapper span{
+    font-weight: bold;
+    font-size:14px;
+    vertical-align: middle;
+}
+
+.form-check-wrapper .check{
+    position:absolute;
+    top:10px;
+    left:10px;
+    transform:translate(-50%,-50%);
+    width:8px;
+    height:8px;
+    border-radius:4px;
+    background-color:#000;
+    display:none;
+}
+
+.form-check-wrapper input[type=checkbox]:checked + label > .check{
+    display: block;
+}
+
+.vitrine-vendas{
+    float:left;
+    width:70%;
+}
+
+/*  */
+
+/* PÁGINA VEÍCULO INDIVIDUAL */
+
+    .veiculo-single .center{
+        padding:60px 2% 0 2%;
+    }
+
+    .info-carro{
+        display: inline-block;
+        width:60%;
+    }
+
+    .foto-destaque{
+        width:100%;
+        padding-top:70%;
+        /* background-color:#ccc; */
+        background-image: url('../img/carro1.jpg');
+        background-size:contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .media-parent{
+        width:100%;
+        padding:36px;
+        position:relative;
+    }
+
+    .arrow-left-nav{
+        position:absolute;
+        top:50%;
+        left:8px;
+        transform:translateY(-50%);
+        width:22px;
+        height:22px;
+        background-image:url('../img/arrow-left.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        cursor:pointer;
+    }
+
+    .arrow-right-nav{
+        position:absolute;
+        top:50%;
+        right:8px;
+        transform:translateY(-50%);
+        width:22px;
+        height:22px;
+        background-image:url('../img/arrow-right.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:100% 100%;
+        cursor: pointer;
+    }
+
+    nav.media-carro{
+        width:100%;
+        overflow:hidden;
+    }
+
+    .media-carro-wrapper{
+        width:200%;
+    }
+
+    .border-img{
+        padding:9px;
+        float:left;
+        width: calc(33.3% * (100/200));
+    }
+
+    .border-img:nth-of-type(1){
+        background-color:#8d8d8d;
+    }
+
+    .mini-img{
+        width:100%;
+        padding-top:70%;
+        background-image: url('../img/carro1.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        cursor:pointer;
+    }
+
+    .description-veiculo{
+        display:inline-block;   
+        padding: 20px;
+        vertical-align: top;
+    }
+
+    .description-veiculo h2{
+        margin-bottom: 25px;
+    }
+
+    .description-veiculo p{
+        width:100%;
+        max-width: 200px;
+        font-weight: bold;
+        font-size:15px;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    .info-bread{
+        text-align: left;
+        padding-left:35px;
+    }
+
+    .info-bread span{
+        padding:0 20px;
+    }
+
+    .info-bread a{
+        text-decoration: none;
+        color:black;
+        font-variant: small-caps;
+    }
+
+    .info-bread a:last-child{
+        color:#EB2D2D;
+    }
+
+/*  */
+
+/*  */
+
 /* RESPONSIVO */
 
 @media screen and (max-width: 1060px) {
@@ -461,6 +710,64 @@ footer.rodape{
         font-size:18px; 
     }
 
+    .sidebar{
+        float:none;
+        width:100%;
+        text-align: center;
+    }
+
+    .search-by-price{
+        float:none;
+        display:inline-block;
+    }
+
+    .search-by-year{
+        float:none;
+        display:inline-block;
+        text-align: left;
+    }
+
+    .vitrine-vendas{
+        float:none;
+        width:100%
+    }
+
+    /* 
+    Outra maneira de fazer, dividindo em 3, porém prefiro que fique 100%
+
+    .vitrine-vendas .vitrine-veiculos{
+        float:left;
+        width:33.3%;
+    } 
+
+    */
+
+    .info-carro{
+        display: block;
+        width:100%;
+    }
+
+    .description-veiculo{
+        display:block;   
+        padding: 20px;
+        text-align: center;
+    }
+
+    .description-veiculo h2{
+        margin-bottom: 25px;
+    }
+
+    .description-veiculo p{
+        max-width:100%;
+        font-weight: bold;
+        font-size:15px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .description-veiculo a{
+        margin: 20px 0;
+    }
 }
 
 /*  */
