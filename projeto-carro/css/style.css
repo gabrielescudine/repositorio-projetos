@@ -141,6 +141,7 @@ section.banner{
 
 .titulo-destaque{
     position:relative;
+    max-width:1400px;
     margin: 0 auto;
     text-align: center;
 }
@@ -632,6 +633,57 @@ footer.rodape{
 
 /*  */
 
+/* PÁGINA SOBRE */
+
+/* SECTION SOBRE */
+
+.sobre{
+    padding:60px 0 0 0;
+}
+
+.sobre .center{
+    max-width:800px;
+    padding: 20px 2%;
+}
+
+.sobre-destaque{
+    width:100%;
+    padding-top:60%;
+    background-color:#ccc;
+}
+
+.description-author > h3{
+    text-align: left;
+    font-variant: small-caps;
+    font-size: 24px;
+    padding: 3% 0 1% 0;
+}
+
+.description-author p{
+    text-align: justify;
+    padding: 1% 2%;
+    line-height: 1.5em;
+    font-size:15px;
+}
+
+.img-small{
+    float:left;
+    width:30%;
+    padding-top:30%;
+    background-color:#ccc;
+    margin-top:10px;
+}
+
+.second-description p{
+    float:left;
+    width:70%;
+    padding: 3%;
+    font-size:15px;
+    line-height:1.5em;
+    text-align: justify;
+}
+/*  */
+
 /*  */
 
 /* RESPONSIVO */
@@ -767,6 +819,18 @@ footer.rodape{
 
     .description-veiculo a{
         margin: 20px 0;
+    }
+
+    .second-description .img-small{
+        float:none;
+        width:100%;
+        padding-top:100%;
+    }
+
+    .second-description p{
+        float:none;
+        padding: 1% 2% 0 2%;
+        width:100%;
     }
 }
 
